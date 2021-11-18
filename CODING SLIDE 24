@@ -1,0 +1,25 @@
+package selfProgramming;
+
+public class Exercise6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double amount = 1000;
+		double balance = 2000;
+		double overdraft = 50;
+		
+		if (amount <= balance)
+		{
+			balance = balance - amount;
+			System.out.println("Acct new balance = " + balance);
+		}
+		else
+		{
+			balance = balance - overdraft;
+			System.out.println("Transaction not allowed");
+		}
+
+	}
+
+}
